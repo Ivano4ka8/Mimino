@@ -1,0 +1,79 @@
+/*
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+
+/* utils */
+@import url('./utils/variables.css');
+
+/* base */
+@import url('./base/fonts.css');
+@import url('./base/reset.css');
+@import url('./base/common.css');
+
+/* components */
+@import url('./components/button.css');
+@import url('./components/button-top.css');
+@import url('./components/menu-navigation.css');
+@import url('./components/container.css');
+@import url('./components/socials-icon.css');
+@import url('./components/visually-hidden.css');
+@import url('./components/button-modal.css');
+@import url('./components/hover-button.css');
+
+
+
+/* modal-windows */
+@import url('./layout/modal-windows/book-a-room.css');
+@import url('./layout/modal-windows/book-a-table.css');
+@import url('./layout/modal-windows/prices-per-room.css');
+@import url('./layout/modal-windows/tecnical-works-modal.css');
+
+/* mobile-menu */
+@import url('./layout/modal-windows/mobile-menu.css');
+
+
+/* layout */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/restaurant.css');
+@import url('./layout/welcome.css');
+@import url('./layout/hotel.css');
+@import url('./layout/location.css');
+@import url('./layout/footer.css');
+
+/* pages */
+
+/* hotel  */
+@import url('./layout/pages/hotel/header.css');
+@import url('./layout/pages/hotel/hero.css');
+@import url('./layout/pages/hotel/double-room.css');
+@import url('./layout/pages/hotel/triple-room.css');
+@import url('./layout/pages/hotel/four-seater-room.css');
+@import url('./layout/pages/hotel/footer.css');
+
+
+/* restaurant */
+@import url('./layout/pages/restaurant/header.css');
+@import url('./layout/pages/restaurant/hero.css');
+@import url('./layout/pages/restaurant/about.css');
+@import url('./layout/pages/restaurant/restaurant-menu.css');
+@import url('./layout/pages/restaurant/footer.css');
+
+
+/* room  */
+@import url('./layout/pages/room/header.css');
+@import url('./layout/pages/room/hero.css');
+@import url('./layout/pages/room/amenities.css');
+@import url('./layout/pages/room/footer.css');
+
+
+/* triple-room */
+/* @import url('./layout/pages/triple-room/header.css'); */
+@import url('./layout/pages/triple-room/hero.css');
+@import url('./layout/pages/triple-room/amenities.css');
+/* @import url('./layout/pages/triple-room/footer.css'); */

@@ -1,0 +1,293 @@
+/* restaurant-menu */
+.restaurant-menu {
+  padding-top: 40px;
+  padding-bottom: 64px;
+  background-color: var(--background-color-dark);
+  text-align: center;
+}
+
+.restaurant-menu-title {
+  margin-bottom: 36px;
+  color: var(--title-color-light);
+  font-size: 28px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.restaurant-menu-box {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.restaurant-menu-blocks {
+  margin-bottom: 36px;
+}
+
+.restaurant-menu-suptitle {
+  margin-bottom: 32px;
+  color: var(--title-color-light);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.restaurant-menu-item-one {
+  display: block;
+}
+
+.restaurant-menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.restaurant-menu-text {
+  padding-left: 8px;
+  color: var(--title-color-light);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.restaurant-menu-marker::before {
+  content: '';
+  position: relative;
+  top: -20%;
+  left: 0;
+  padding-inline: 2px;
+  border-radius: 50px;
+  background: var(--accent-color-light);
+  font-size: 0.2em;
+  margin-inline-end: 8px;
+}
+
+.restaurant-menu-list-ingredients {
+  max-width: 200px;
+  color: var(--text-color-restaurant-menu);
+  font-weight: 400;
+  font-size: 10px;
+  font-family: 'Geometria';
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+}
+
+.restaurant-menu-price {
+  color: var(--title-color-light);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.restaurant-menu-grams {
+  color: var(--text-color-modal);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+}
+
+.restaurant-menu-wrap-meals {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.restaurant-menu-desserts {
+  margin-bottom: 18px;
+}
+
+.restaurant-menu-btn {
+  padding: 8px 18px;
+  border: 0.8px solid var(--text-color-light);
+  border-radius: 32px;
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  transition-timing-function: var(--cubic);
+  transition-duration: 250ms;
+  transition-property: background-color, color, border;
+}
+
+.restaurant-menu-btn:hover,
+.restaurant-menu-btn:focus {
+  border: 0.8px solid var(--accent-color-light);
+  background-color: var(--background-color-header);
+  color: var(--accent-color-dark);
+}
+
+.restaurant-menu-divider {
+  position: relative;
+  padding: 6px 0px;
+}
+
+.restaurant-menu-divider::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.2px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background: rgb(56, 56, 59);
+  text-decoration: underline;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slick-active {
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant-slider-btn-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+
+.slider-btn-icon-left,
+.slider-btn-icon-right {
+  display: block;
+  fill: var(--accent-color-light);
+  
+}
+
+.restaurant-slider-btn-prev,
+.restaurant-slider-btn-next {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+.slick-disabled .slider-btn-icon-left,
+.slick-disabled .slider-btn-icon-right{
+  fill: rgba(247, 247, 247, 0.3);
+  /* fill: transparent; */
+}
+
+@media screen and (min-width: 375px) {
+  .restaurant-menu-title {
+    font-size: 32px;
+  }
+
+  .restaurant-menu-suptitle {
+    font-size: 18px;
+  }
+
+  .restaurant-menu-price {
+    font-size: 14px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .restaurant-menu {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: start;
+  }
+
+  .restaurant-menu-title {
+    margin-bottom: 64px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .restaurant-menu-list {
+    width: 515px;
+  }
+
+  .restaurant-menu-suptitle {
+    font-size: 24px;
+  }
+
+  .restaurant-menu-text {
+    font-size: 18px;
+  }
+
+  .restaurant-menu-grams {
+    font-size: 14px;
+  }
+
+  .restaurant-menu-list-ingredients {
+    max-width: 345px;
+    font-size: 12px;
+  }
+
+  .restaurant-menu-price {
+    font-size: 18px;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+  .restaurant-slider-btn-wrap {
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .restaurant-slider-btn-prev,
+  .restaurant-slider-btn-next {
+    width: 36px;
+    height: 36px;
+  }
+
+  .slider-btn-icon-right,
+  .slider-btn-icon-left {
+    width: 18px;
+    height: 18px;
+  }
+
+  .restaurant-menu-btn {
+    margin-left: 95px;
+    padding: 8px 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-menu {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .restaurant-menu-title {
+    margin-bottom: 100px;
+  }
+
+  .restaurant-menu-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    align-items: baseline;
+    margin-bottom: 50px;
+    column-gap: 74px;
+    justify-content: center;
+  }
+
+  .restaurant-menu-btn {
+    margin-left: 137px;
+    padding: 9px 24px;
+    font-size: 18px;
+  }
+
+  .restaurant-slider-btn-wrap {
+    display: none;
+  }
+
+  .restaurant-menu-blocks {
+    margin-bottom: 0;
+  }
+}
